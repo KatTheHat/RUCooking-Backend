@@ -18,7 +18,7 @@ app.use(express.json());
 
 // This is above the auth middleware so that it can be accessed without it
 app.get("/ping", (_, res) => {
-  res.json({ message: "pong" });
+  res.json({ message: "response" });
 });
 
 app.use(authMiddleware);
